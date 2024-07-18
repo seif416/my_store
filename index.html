@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Store</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="filter">
+        <h1>My Store</h1>
+        <div class="inputs">
+          <div class="search">
+            <label for="search" style="color: white">Search:</label>
+            <input
+              id="search"
+              title="search"
+              type="search"
+              placeholder="Search for products"
+            />
+          </div>
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected">All Categories</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="menu">
+              <li class="category-option" data-category="all">
+                All Categories
+              </li>
+              <li class="category-option" data-category="men's clothing">
+                Men's Clothing
+              </li>
+              <li class="category-option" data-category="jewelery">Jewelry</li>
+              <li class="category-option" data-category="women's clothing">
+                Women's Clothing
+              </li>
+              <li class="category-option" data-category="electronics">
+                Electronics
+              </li>
+            </ul>
+          </div>
+          <div class="price-filter">
+            <label for="min-price" style="color: white">Min Price:</label>
+            <input id="min-price" type="number" placeholder="min-price" />
+            <label for="max-price" style="color: white">Max Price:</label>
+            <input id="max-price" type="number" placeholder="max-price" />
+            <button id="apply-price-filter">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+      
+
+      <div id="product-container"></div>
+      <div class="pagination">
+        <div id="page-info"></div>
+        <button id="prev-page">Previous</button>
+        <button id="next-page">Next</button>
+      </div>
+     
+      
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
